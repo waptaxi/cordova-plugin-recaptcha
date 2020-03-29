@@ -9,15 +9,12 @@
     <author>James Macmillan</author>
     <license>MIT</license>
     <keywords>recaptcha</keywords>
-    <info>
-        You may need to install the __Google Repository__ from the `SDK Tools` section using the
-        Android SDK manager.
-    </info>
+    <info></info>
     <js-module src="www/recaptcha.js" name="recaptcha">
         <clobbers target="plugins.recaptcha" />
     </js-module>
     <platform name="android">
-        <framework src="com.google.android.gms:play-services-safetynet:+" />
+        <framework src="com.google.android.gms:play-services-safetynet:16.+" />
 
         <config-file target="config.xml" parent="/*">
             <feature name="Recaptcha">
